@@ -1,0 +1,40 @@
+/*Дополнительные стили для холста */
+
+.canvas-container {
+    width: 100%;
+    max-width: 1600px;
+    height: 900px;
+    border: 2px solid #007bff;
+    position: relative;
+    background-color: #f8f9fa;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.board-item {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.board-item:hover {
+    transform: scale(1.02);
+}
+.focus-indicator {
+    border: 3px dashed #ff0000;
+    position: relative;
+}
+.user-label {
+    position: absolute;
+    top: -25px;
+    background: #ff0000;
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.error-field {
+    border-color: #dc3545 !important;
+}
+.error-message {
+    color: #dc3545;
+    font-size: 0.875em;
+    margin-top: 0.25rem;
+}

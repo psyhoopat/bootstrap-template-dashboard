@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивные Доски - SPA Шаблон</title>
+    <!-- Bootstrap CSS -->
+    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Навигационная панель -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Интерактивные Доски</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="public-boards.html">Публичные доски</a></li>
+                <li class="nav-item"><a class="nav-link" href="my-boards.html">Мои доски</a></li>
+                <li class="nav-item"><a class="nav-link" href="registration.html">Регистрация</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Войти</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="profile.html" id="user-profile">Профиль</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="logout">Выход</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Основной контейнер для SPA (использовать React Router) -->
+<div class="container mt-4" id="app" style="text-align: center;">
+    <!-- Страница списка публичных досок (роут /) -->
+    <h1>Привет всем! Это доски, <a href="registration.html">зарегистрируйся</a> или
+        <a href="login.html">войди</a>. Можно посмотреть <a href="public-boards.html">публичные доски</a></h1>
+
+    <!--Для авторизованного-->
+    <h1>Привет! Давай <a href="my-boards.html">создадим доску</a></h1>
+</div>
+
+<!-- Bootstrap JS -->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>-->
+<script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+<!-- JS логика для SPA (React + React Router + WebSocket + API calls) -->
+<script>
+    // Пример базовой JS логики (расширить для полноценного SPA)
+    // Использовать fetch для REST API с Authorization: Bearer token
+    // WebSocket для реального времени: new WebSocket('ws://example.com/ws')
+    // Валидация: добавить класс 'error-field' и текст в error-message на ошибках
+    // Холст: использовать HTML5 Canvas или Fabric.js для объектов с фокусом, вращением, масштабом
+    // После логина/регистрации: window.location.hash = '/public-boards'
+    console.log('Bootstrap шаблон готов');
+</script>
+</body>
+</html>
